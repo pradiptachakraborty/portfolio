@@ -1,0 +1,293 @@
+body {
+    margin: 0;
+    margin-left: 10px;
+    padding-top: 80px; /* to prevent content hiding under fixed navbar */
+    background-color: rgb(218, 223, 228);
+    font-family: Arial, sans-serif;
+}
+
+/* ===== Navbar ===== */
+.topBar {
+    display: flex;
+    background-color: black;
+    padding: 20px;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+.topBar a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.nav-bar {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-bar a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.brand {
+    margin-right: 80px;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.section {
+    margin-top: 50px;
+    justify-content: center;
+    display: flex;
+}
+
+.section img {
+    margin-left: 150px;
+    width: 500px;
+    height: auto;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.section img:hover{
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.secFirstDiv {
+    margin-top: 100px;
+    font-size: 20px;
+    text-align: center;
+}
+
+/* ===== About Section ===== */
+.secDiv h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: blue;
+    margin-bottom: 30px;
+}
+
+.about {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.about img {
+    max-width: 400px;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+
+.about img:hover{
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* Skills Section */
+.secDiv h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: blue;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.secDiv h1 span {
+    color: orangered;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.skills-box {
+    width: 460px;
+}
+
+.skill {
+    margin-bottom: 25px;
+}
+
+.skill p {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0 0 8px;
+}
+
+.bar {
+    background: #2d2d3a;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.fill {
+    background: rgb(98, 221, 61);
+    height: 100%;
+    width: 0;
+    border-radius: 5px;
+    transition: width 1.5s ease-in-out;
+}
+
+/*project section*/
+.proj{
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    padding: 40px 20px;
+    gap: 40px;
+}
+.proj a{
+    text-decoration: none;
+    color: black;
+}
+.proj1{
+    width: 300px;
+    background: rgb(142, 227, 241);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    cursor: pointer;
+}
+.proj1 img{
+    width: 100%;
+}
+.project-title{ 
+    padding: 10px; 
+    text-align: center; 
+    font-weight: bold; 
+    font-size: 1rem; 
+}
+.proj1:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+/* ===== Contact Section ===== */
+.contact-section {
+    background-color: rgb(183, 195, 205);
+    padding: 60px 20px;
+    font-weight: bold;
+}
+
+.contact-container {
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 400px;
+    flex-wrap: wrap;
+}
+
+.contact-info h1 {
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+/*.contact-info h1 span {
+    
+}*/
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 15px 0;
+    font-size: 16px;
+}
+
+.info-item i {
+    font-size: 25px;
+    background: #111;
+    padding: 12px;
+    border-radius: 50%;
+    color: cyan;
+}
+
+/* ===== Buttons ===== */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: rgb(253, 27, 42);
+    color: black;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: 0.3s;
+    box-shadow: 0 0 15px cyan;
+}
+
+.btn:hover {
+    background: white;
+    box-shadow: 0 0 20px cyan;
+}
+
+/* ===== Contact Form ===== */
+.contact-form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+    font-size: 16px;
+    background: #a9e2f1;
+    color: black;
+    font-weight: bold;
+}
+
+.contact-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* ===== Footer ===== */
+.footer {
+    text-align: center;
+    background: #050514;
+    color: white;
+    padding: 15px;
+    font-size: 14px;
+    border-top: 1px solid #222;
+}
+
+.footer span {
+    color: red;
+}
