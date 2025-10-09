@@ -34,10 +34,8 @@ body {
     text-decoration: none;
     font-size: 25px;
 }
-html {
-  scroll-behavior: smooth;
-}
-section, .secDiv {
+
+.section, .secDiv {
   scroll-margin-top: 100px;
 }
 
@@ -298,3 +296,4 @@ section, .secDiv {
     color: red;
 
 }
+
